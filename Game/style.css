@@ -1,22 +1,22 @@
 *{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .game{
     width: 750px;
-    height: 280px;
+    height: 289px;
     border: 1px solid black;
     margin: auto;
 }
 #hintergrund{
     background-image:url("../assets/img/hintergrun-game-unendlich.jpg");
-    background-size: 750px 280px;
+    background-size: 750px 289px;
     background-repeat: repeat-x;
     width: 2250px;
-    height: 280px;
+    height: 289px;
     position: relative;
-    top: -90px;
+    top: -99px;
     left: 0px;
     animation: hintergrund 1.50s infinite linear;
 }
