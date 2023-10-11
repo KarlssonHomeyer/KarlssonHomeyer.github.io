@@ -4,17 +4,37 @@
     overflow-x: hidden;
 }
 .game{
-    width: 500px;
-    height: 200px;
+    width: 750px;
+    height: 280px;
     border: 1px solid black;
     margin: auto;
+}
+#hintergrund{
+    background-image:url("../assets/img/hintergrun-game-unendlich.jpg");
+    background-size: 750px 280px;
+    background-repeat: repeat-x;
+    width: 2250px;
+    height: 280px;
+    position: relative;
+    top: -85px;
+    left: 0px;
+    animation: hintergrund 1.50s infinite linear;
+}
+@keyframes hintergrund{
+    0%{left: 0px}
+    100%{left: -750px}
 }
 #character{
     width: 20px;
     height: 50px;
-    background-color: red;
+    background-image:url("../assets/img/charackter-laufen-game-2.gif");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 28px;
     position:relative;
-    top: 150px;
+    top: 226px;
+    left: 100px;
+    z-index: 10;
 }
 .animate{
     animation: jump 0.3s linear;
@@ -27,16 +47,20 @@
 }
 
 #block{
-    background-color: blue;
-    width: 20px;
-    height: 20px;
+    background-image:url("../assets/img/stein-game.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: -3px 2px;
+    width: 40px;
+    height: 35px;
     position: relative;
-    top: 130px;
-    left: 500px;
-    animation: block 1s infinite linear;
+    top: 194px;
+    left: 750px;
+    animation: block 1.575s infinite linear;
+    z-index: 10;
 }
 @keyframes block{
-    0%{left: 500px}
+    0%{left: 770px}
     100%{left: -20px}
 }
 p{
