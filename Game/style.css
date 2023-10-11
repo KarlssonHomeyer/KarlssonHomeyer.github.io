@@ -16,7 +16,7 @@
     width: 2250px;
     height: 280px;
     position: relative;
-    top: -85px;
+    top: -90px;
     left: 0px;
     animation: hintergrund 1.50s infinite linear;
 }
@@ -25,18 +25,25 @@
     100%{left: -750px}
 }
 #character{
-    width: 20px;
-    height: 50px;
-    background-image:url("../assets/img/charackter-laufen-game-2.gif");
-    background-size: 20px;
+    background-image:url("../assets/img/charackter-game-sprite.png");
     background-repeat: no-repeat;
-    background-position: 0px 28px;
     position:relative;
-    top: 226px;
+    top: 228px;
     left: 100px;
     z-index: 10;
+    width:41px; 
+    height:64px;
 }
-.animate{
+
+.run{
+    animation: run 0.6s infinite steps(7), linear;
+}
+@keyframes run{
+    0%{ background-position:0px 0px;} 
+    100%{ background-position:-448px 0px;} 
+}
+
+.jump{
     animation: jump 0.3s linear;
 }
 @keyframes jump{
